@@ -1,0 +1,11 @@
+<h1>Getting and Setting Methods</h1>
+<p>In this example, we will use the get and set methods to get and set the value of a property.</p>
+
+<h1>{{displayName}}</h1>
+<input type="text" (input)="handleChange($event)" placeholder="Enter your name" />
+<button (click)="getName()">Get</button>
+
+<h1>{{displayEmail}}</h1>
+<input type="email" value="{{email}}" name="email" #emailEvent >
+<button (click)="getEmail(emailEvent.value)">Get</button>
+<button (click)="setEmail()">Set</button>

@@ -1,0 +1,8 @@
+<h1>Event Button Handling</h1>
+
+<div style="height: 90px; width: 90px; background-color: red; padding: 30px; margin: 20px;"
+(mouseleave)="mouseEvent($event)" (mouseenter)="mouseEvent($event)"></div>
+
+<h1 style="color: chartreuse;">{{name}}</h1>
+<input type="text" (input)="onChange($event)" (focus)="onChange($event)" (blur)="onChange($event)" placeholder="Type something here" />
+
