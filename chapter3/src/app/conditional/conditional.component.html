@@ -1,0 +1,45 @@
+<h1>Conditional Programming in Angular</h1>
+
+<button (click) = "toggleDiv('red')">Red</button>
+<button (click) = "toggleDiv('gold')">Gold</button>
+<button (click) = "toggleDiv('other')">Other</button>
+
+@if(color === 'red'){
+  <div style="height: 200px; width: 200px; background-color: red;"></div>
+}
+@else if(color === 'gold'){
+  <div style="height: 200px; width: 200px; background-color: gold;"></div>
+}
+@else{
+    <div style="height: 200px; width: 200px; background-color: blue;"></div>
+}
+
+<!-- <input type="text" placeholder="Enter color" value={{color}} (input) = "toggleColor($event)"/>
+
+<div [style.background-color]="color" style="height: 200px; width: 200px;"></div> -->
+
+
+<h1>Switch Case in Angular</h1>
+
+<button (click) = "toggleDiv('red')">Red</button>
+<button (click) = "toggleDiv('green')">Green</button>
+<button (click) = "toggleDiv('orange')">Orange</button>
+<button (click) = "toggleDiv('blue')">Other</button>
+
+@switch(color){
+  @case ('red'){
+    <div style="height: 200px; width: 200px; background-color: red;"></div>
+    <!-- @break; -->
+  }
+  @case ('green'){
+    <div style="height: 200px; width: 200px; background-color: green;"></div>
+    <!-- @break; -->
+  }
+  @case ('orange'){
+    <div style="height: 200px; width: 200px; background-color: orange;"></div>
+    <!-- @break; -->
+  }
+  @default{
+    <div style="height: 200px; width: 200px; background-color: black;"></div>
+  }
+}

@@ -1,0 +1,10 @@
+<h1>Looping in Angular</h1>
+
+@for(user of users; track user){
+    <h4>{{user}}</h4>
+}
+<hr/>
+
+@for(student of students; track student){
+    <h4>{{$index+1}} : {{student.name}}-----{{student.age}}------{{student.email}}</h4>
+}
